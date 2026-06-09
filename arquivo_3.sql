@@ -1,3 +1,4 @@
+-- Active: 1778352516380@@127.0.0.1@3306@novo_banco
 
 
 SELECT * FROM agente_de_custodia ORDER BY `Cod_Registro` DESC;
@@ -67,11 +68,11 @@ SELECT * FROM renda_variavel WHERE `Cod_Negociacao` < 9;
 
 #Consulta para a tabela de cliente-endereço!
 
-SELECT * FROM cliente_endereco WHERE `Cod_Endereco` < 11;
+SELECT * FROM end_cliente WHERE `id_end_cliente` < 11;
 
 #Consulta para a tabela tipo_telefone_cliente!
 
-SELECT * FROM tipo_telefone WHERE tipo < 7;
+SELECT * FROM tipo_telefone WHERE id_tipo_tel < 7;
 
 
 

@@ -2,7 +2,6 @@
 
 
 
-DROP DATABASE NOVO_BANCO;
 
 
 CREATE DATABASE NOVO_BANCO;
@@ -188,7 +187,6 @@ CREATE TABLE `derivativos` (
   `termo` VARCHAR(100) NOT NULL,
    fk_cod_ativo INT NOT NULL,
    FOREIGN KEY(fk_cod_ativo) REFERENCES ativos(cod_ativo)
-   
 );
 
 
@@ -242,11 +240,7 @@ CREATE TABLE `end_cliente` (
 
 );
 
-ALTER TABLE end_cliente
-DROP COLUMN uf;
 
-ALTER TABLE end_cliente
-ADD COLUMN UF VARCHAR(10) NOT NULL AFTER cidade;
 #Criando tabela para o telefone do cliente!
 
 
